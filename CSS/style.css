@@ -1,14 +1,96 @@
-.test {
-    display: inline-block;
+body {
+    font-family: "Arial";
+    line-height: 1.2;
+    font-weight: 400;
+    word-spacing: normal;
+    text-transform: none;
+    background-color: #eee;
+}
+
+header {
+    background-color: #aaa;
+    margin-left: 160px;
+    padding: 0 1em;
+    width: 100%;
+}
+
+main {
+    margin-left: 160px;
+    padding: 0 10px;
+}
+
+footer {
+    background-color: #aaa;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+p {
+    text-indent: 20px;
+}
+
+div.page {
+    display: none;
+}
+
+.sidenav {
+    position: fixed;
+    width: 150px;
+    top: 20px;
+    left: 10px;
+    background: #ddd;
+    padding: 8px 0;
+}
+
+.sidenav button {
+    font-size: 110%;
+    display: block;
+    padding: 6px 8px;
+    color: #2196F3;
+}
+
+.sidenav button:hover {
+    color: #064579;
+    text-decoration: underline;
+    background-color: #bbb;
+}
+
+.sidenav .current {
+    background-color: #bbb;
 }
 
 .test + details {
     display: inline-block;
     width: 20.5%;
     margin-right: 2%;
-    z-index: 1;
 }
 
-.summary {
-    z-index: 0;
+.img_right {
+    float: right;
+    margin: 7px 0 7px 7px;
+}
+
+.img_left {
+    float: left;
+    margin: 7px 7px 7px 0;
+}
+
+.gallery_unit {
+    margin: 5px;
+    border: 1px solid #888;
+    float: left;
+    width: auto;
+}
+
+.gallery_unit_img {
+    width: auto;
+    height: 160px;
+}
+
+div.gallery_unit_desc {
+    padding: 15px;
+    text-align: center;
+    background-color: #999;
 }
