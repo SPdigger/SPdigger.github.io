@@ -11,7 +11,7 @@ header {
     background-color: #aaa;
     margin-left: 160px;
     padding: 0 1em;
-    width: 100%;
+    width: auto;
 }
 
 main {
@@ -31,40 +31,35 @@ p {
     text-indent: 20px;
 }
 
-div.page {
-    display: none;
-}
-
-.sidenav {
+nav {
     position: fixed;
-    width: 150px;
+    width: 160px;
     top: 20px;
     left: 10px;
     background: #ddd;
     padding: 8px 0;
 }
 
-.sidenav button {
+nav ul {
+    padding: 8px;
+    list-style: none;
+}
+
+nav a {
     font-size: 110%;
     display: block;
     padding: 6px 8px;
     color: #2196F3;
 }
 
-.sidenav button:hover {
+nav a:hover {
     color: #064579;
     text-decoration: underline;
-    background-color: #bbb;
+    background-color: #aaa;
 }
 
-.sidenav .current {
+nav .current {
     background-color: #bbb;
-}
-
-.test + details {
-    display: inline-block;
-    width: 20.5%;
-    margin-right: 2%;
 }
 
 .img_right {
@@ -87,10 +82,43 @@ div.page {
 .gallery_unit_img {
     width: auto;
     height: 160px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
 }
 
 div.gallery_unit_desc {
     padding: 15px;
     text-align: center;
     background-color: #999;
+}
+
+
+@media screen and (handheld), screen and (max-width: 800px) {
+    footer {
+        display: none;
+    }
+}
+
+.grid_table {
+    display: grid;
+    grid-template-columns: 
+        minmax(150px, 2fr)
+        minmax(100px, 1fr)
+        minmax(100px, 1fr)
+        minmax(150px, 3fr)
+        minmax(150px, 2fr)
+        minmax(150px, 3fr);
+}
+
+.grid_table thead,
+.grid_table tbody,
+.grid_table tr {
+    display: contents;
+}
+
+.grid_table tr:nth-child(even) td {
+    background-color: #ddd;
+}
+
+.grid_table th {
+    background-color: #ddd;
 }
