@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="ножки, многоножки, написать еще что-нибудь">
+		<meta name="description" content="">
+		<title>Ножки многоножки</title>
+		<link rel="stylesheet" href="CSS/style.css">
+		<script src="JS/get_load_time.js"></script>
+		<script src="JS/promise.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Немножко о многоножках</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Таблица</a></li>
+				<li><a href="classification.html">Классификация</a></li>
+				<li><a href="facts.html">Факты</a></li>
+				<li><a href="gallery.html">Галерея</a></li>
+                <li><a href="form.html">Форма</a></li>
+                <li><a class="current" href="loaded.html">Загруженные дела</a></li>
+			</ul>
+		</nav>
+		<main>
+            <h2>Загруженный список дел</h2>
+			<div class="waiting" id="todoList"></div>
+            <div class="waiting" id="preloader"></div>
+		</main>
+		<footer>
+			<p>Время загрузки страницы <span id="time_measurement"></span> мс</p>
+		</footer>
+	</body>
+</html>

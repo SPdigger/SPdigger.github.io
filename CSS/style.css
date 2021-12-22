@@ -122,3 +122,19 @@ div.gallery_unit_desc {
 .grid_table th {
     background-color: #ddd;
 }
+
+#preloader {
+    display: none;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: url('preloader.gif');
+}
+
+#todoList.waiting  {
+    opacity: 0;
+}
+
+#preloader.waiting {
+    display: block;
+}
